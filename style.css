@@ -1,0 +1,722 @@
+.darkmode {
+    background-color: #222222;
+    transition: all 500ms ease-out;
+}
+
+h1 {
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1px;
+}
+
+
+/*CONTAINER MET ALLE VROUWEN---------------------------*/
+
+.vrouwen {
+    padding-top: 10%;
+    width: 70%;
+    margin: auto;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+/*    scroll-padding: 30%;*/
+}
+
+.wit {
+    opacity: 0;
+}
+
+svg {
+    width: 23vw;
+    scroll-snap-align: center;
+}
+
+
+/*
+.slideIn {
+    animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(8%);
+        color: black;
+    }
+    65% {
+        transform: translateX(-4%);
+        color: red;
+    }
+    80% {
+        transform: translateX(4%);
+        color: black;
+    }
+    95% {
+        transform: translateX(-2%);
+        color: red;
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+*/
+
+
+/*H1 ANIMATIE WOMEN OF THE REVOLUTION--------------------*/
+
+
+/*
+h1:hover {
+    opacity: 1;
+    animation: slideOut 1.5s cubic-bezier(0, .57, .51, .98) forwards;
+}
+*/
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:focus h1 {
+    opacity: 1;
+    animation: slideOut 1.5s cubic-bezier(0, .57, .51, .98) forwards;
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(-150%);
+    }
+}
+
+h2 {
+    opacity: 0;
+}
+
+
+/*
+h1:hover + h2 {
+    opacity: 1;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 53px;
+    font-size: 4em;
+    font-family: "Ramadhan Karim";
+    animation: fadeIn 2s ease-in forwards;
+}
+*/
+
+a:focus + h2 {
+    opacity: 1;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 53px;
+    font-size: 4em;
+    font-family: "Ramadhan Karim";
+    animation: fadeIn 2s ease-in forwards;
+    color: crimson;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*NAMEN VAN DE VROUWEN ---------------------*/
+
+.namen {
+    text-align: center;
+}
+
+.namen h3 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: "Ramadhan Karim";
+    font-size: 3em;
+    color: crimson;
+}
+
+
+/*NAMEN DISPLAY NONE---------*/
+
+.rabia {
+    display: none;
+}
+
+.samirah {
+    display: none;
+}
+
+.zaina {
+    display: none;
+}
+
+.fatima {
+    display: none;
+}
+
+.adila {
+    display: none;
+}
+
+.naam {
+    position: absolute;
+    margin-left: 1em;
+    top: 35%;
+    display: block;
+    animation: naamAnimatie 3s cubic-bezier(0, .51, 1, .81) forwards;
+    /*    margin-bottom: -10px; cubic-bezier(0, .57, .51, .98)*/
+}
+
+@keyframes naamAnimatie {
+    0% {
+        transform: translateX(-300px);
+    }
+    20% {
+        transform: translateX(10px)
+    }
+    40% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateY(10px) rotateZ(-20deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(600%) rotateZ(360deg);
+        opacity: 0;
+    }
+}
+
+.naam1 {
+    position: absolute;
+    margin-left: 1em;
+    top: 35%;
+    display: block;
+    animation: naamAnimatie1 3s cubic-bezier(0, .51, 1, .81) forwards;
+    /*    margin-bottom: -10px; cubic-bezier(0, .57, .51, .98)*/
+}
+
+@keyframes naamAnimatie1 {
+    0% {
+        transform: translateX(-300px);
+    }
+    20% {
+        transform: translateX(10px)
+    }
+    40% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateY(10px) rotateZ(-20deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-600%) rotateZ(360deg);
+        opacity: 0;
+    }
+}
+
+/*VROUW1--------------------------*/
+
+#women0 {
+    transition: width .5s;
+}
+
+#women0:active {
+    width: 30%;
+}
+
+
+/* SONOS BOX----------------------------*/
+
+.sonos {
+    opacity: 0;
+    position: absolute;
+    bottom: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: lightgray;
+    border-top: solid 20px #f6f6f6;
+    border-bottom: solid 20px #f6f6f6;
+}
+
+.muziek {
+    animation: muziek 1s ease-in forwards;
+    opacity: 1;
+}
+
+@keyframes muziek {
+    0% {
+        transform: translateY(-400%);
+    }
+    80% {
+        transform: translateY(-105%)
+    }
+    90% {
+        transform: translateY(-110%);
+    }
+    100% {
+        transform: translateY(-105%);
+    }
+}
+
+h4 {
+    font-family: "Gill Sonos";
+    font-size: 1em;
+    margin: 0;
+    margin-top: -20px;
+    color: dimgrey;
+}
+
+audio {
+    width: 100px;
+    height: 20px;
+    margin-top: 101px
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: transparent;
+}
+
+audio::-webkit-media-controls-play-button {
+    margin-left: 23px
+}
+
+audio::-webkit-media-controls-mute-button {
+    display: none;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    display: none;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+
+audio::-webkit-media-controls-timeline {
+    display: none;
+}
+
+audio::-webkit-media-controls-volume-slider-container {
+    display: none;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    display: none;
+}
+
+
+/*VROUW2--------------------------*/
+
+.light {
+    width: 70%;
+    height: 10px;
+    background: black;
+    margin: auto;
+    opacity: 1;
+    margin-bottom: 3em;
+    opacity: 0;
+    /*    animation: flashing 1.5s infinite ease-in;*/
+}
+
+.flashinglight {
+    opacity: 1;
+    animation: flashing 2s infinite ease-in;
+}
+
+@keyframes flashing {
+    0% {
+        box-shadow: 0px 30px 30px 14px rgba(255, 41, 255, 1);
+        transform: translateX(0px);
+    }
+    25% {
+        box-shadow: 0px 20px 30px 14px rgba(43, 230, 255, 1);
+        transform: translateX(50px);
+    }
+    50% {
+        box-shadow: 0px 30px 30px 14px rgba(255, 41, 255, 1);
+        transform: translateX(0px);
+    }
+    75% {
+        box-shadow: 0px 20px 30px 14px rgba(43, 230, 255, 1);
+        transform: translateX(50px);
+    }
+    100% {
+        box-shadow: 0px 30px 30px 14px rgba(255, 41, 255, 1);
+        transform: translateX(0px);
+    }
+}
+
+#women1 {
+    /*    transition: all 500ms ease-out;*/
+    fill: crimson;
+}
+
+
+/*VROUW3--------------------------*/
+
+/*Confetti--------------------*/
+
+.disco {
+    background-color: darkseagreen;
+    position: absolute;
+    left: 20%;
+    height: 30px;
+    width: 10px;
+    animation: confetti 4s cubic-bezier(0,.29,.77,.99) infinite;
+}
+
+@keyframes confetti {
+    0% {
+        transform: skew(-30deg);
+        top: 0%;
+        opacity: 0;
+    }
+    20% {
+        transform: skew(30deg);
+/*        top: 20%;*/
+        opacity: 1;
+    }
+    40% {
+        transform: skew(-30deg);
+/*        top: 40%;*/
+    }
+    60% {
+        transform: skew(30deg);
+/*        top: 60%;*/
+    }
+    90% {
+        transform: skew(-30deg);
+/*        top: 80%;*/
+        opacity: 1;
+    }
+    100% {
+        transform: skew(30deg);
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.disco1 {
+    background-color: orange;
+    position: absolute;
+    left: 30%;
+    height: 25px;
+    width: 10px;
+    animation: confetti1 3.5s cubic-bezier(0,.29,.77,.99) infinite;
+}
+
+@keyframes confetti1 {
+    0% {
+        transform: skew(20deg);
+        top: 0%;
+        opacity: 0;
+    }
+    20% {
+        transform: skew(-40deg);
+/*        top: 10%;*/
+        opacity: 1;
+    }
+    40% {
+        transform: skew(22deg);
+/*        top: 30%;*/
+    }
+    60% {
+        transform: skew(-30deg);
+/*        top: 50%;*/
+    }
+    90% {
+        transform: skew(20deg);
+/*        top: 70%;*/
+        opacity: 1;
+    }
+    100% {
+        transform: skew(-30deg);
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.disco2 {
+    background-color: deeppink;
+    position: absolute;
+    left: 42%;
+    height: 25px;
+    width: 10px;
+    animation: confetti2 5.5s cubic-bezier(0,.29,.77,.99) infinite;
+}
+
+@keyframes confetti2 {
+    0% {
+        transform: skew(20deg);
+        top: 0%;
+        opacity: 0;
+    }
+    20% {
+        transform: skew(-40deg);
+/*        top: 10%;*/
+        opacity: 1;
+    }
+    40% {
+        transform: skew(22deg);
+/*        top: 30%;*/
+    }
+    60% {
+        transform: skew(-30deg);
+/*        top: 50%;*/
+    }
+    90% {
+        transform: skew(20deg);
+/*        top: 70%;*/
+        opacity: 1;
+    }
+    100% {
+        transform: skew(-30deg);
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.disco3 {
+    background-color: mediumorchid;
+    position: absolute;
+    left: 52%;
+    height: 25px;
+    width: 10px;
+    animation: confetti3 6.5s cubic-bezier(0,.29,.77,.99) infinite;
+}
+
+@keyframes confetti3 {
+    0% {
+        transform: skew(20deg);
+        top: 0%;
+        opacity: 0;
+    }
+    20% {
+        transform: skew(-40deg);
+/*        top: 10%;*/
+        opacity: 1;
+    }
+    40% {
+        transform: skew(22deg);
+/*        top: 30%;*/
+    }
+    60% {
+        transform: skew(-30deg);
+/*        top: 50%;*/
+    }
+    90% {
+        transform: skew(20deg);
+/*        top: 70%;*/
+        opacity: 1;
+    }
+    100% {
+        transform: skew(-30deg);
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.disco4 {
+    background-color: coral;
+    position: absolute;
+    left: 68%;
+    height: 25px;
+    width: 10px;
+    animation: confetti4 4.5s cubic-bezier(0,.29,.77,.99) infinite;
+}
+
+@keyframes confetti4 {
+     0% {
+        transform: skew(-30deg);
+        top: 0%;
+        opacity: 0;
+    }
+    20% {
+        transform: skew(30deg);
+/*        top: 20%;*/
+        opacity: 1;
+    }
+    40% {
+        transform: skew(-30deg);
+/*        top: 40%;*/
+    }
+    60% {
+        transform: skew(30deg);
+/*        top: 60%;*/
+    }
+    90% {
+        transform: skew(-30deg);
+/*        top: 80%;*/
+        opacity: 1;
+    }
+    100% {
+        transform: skew(30deg);
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.disco5 {
+    background-color: aqua;
+    position: absolute;
+    left: 74%;
+    height: 25px;
+    width: 10px;
+    animation: confetti5 4s cubic-bezier(0,.29,.77,.99) infinite;
+}
+
+@keyframes confetti5 {
+    0% {
+        transform: skew(20deg);
+        top: 0%;
+        opacity: 0;
+    }
+    20% {
+        transform: skew(-40deg);
+/*        top: 10%;*/
+        opacity: 1;
+    }
+    40% {
+        transform: skew(22deg);
+/*        top: 30%;*/
+    }
+    60% {
+        transform: skew(-30deg);
+/*        top: 50%;*/
+    }
+    90% {
+        transform: skew(20deg);
+/*        top: 70%;*/
+        opacity: 1;
+    }
+    100% {
+        transform: skew(-30deg);
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+
+/*Disco---------------------*/
+
+/*
+.disco {
+    transition: all 1s ease-out;
+    fill: green;
+}
+*/
+
+/*VROUW4--------------------------*/
+/*BRON: http://animista.net/play/basic/flip-scale-2/flip-scale-2-ver-left*/
+.flip-scale-2-ver-left {
+    animation: flip-scale-2-ver-left .7s ease-out forwards;
+}
+
+@keyframes flip-scale-2-ver-left {
+    0% {
+        transform: translateX(0) rotateY(0) scale(1);
+        transform-origin: 0% 50%;
+    }
+
+    50% {
+        transform: translateX(-50%) rotateY(90deg) scale(2);
+        transform-origin: 50% 50%;
+    }
+
+    100% {
+        transform: translateX(-100%) rotateY(180deg) scale(1);
+        transform-origin: 100% 50%;
+    }
+}
+
+.vrouw3:hover #hand {
+    animation: handsup 500ms ease infinite;
+}
+@keyframes handsup {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(20px)
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/*VROUW5--------------------------*/
+#women4:hover #hand {
+    animation: handsup 500ms ease infinite;
+}
+@keyframes handsup {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(20px)
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+
+/*
+MEDIAQUERIES ------------------------------------------
+*/
+@media screen and (min-width: 50em) {
+    body {
+        background-color: white;
+    }
+
+    svg {
+        width: 18vw;
+    }
+
+    .vrouwen {
+        width: 55%;
+    }
+}
+@media screen and (min-width: 70em) {
+    body {
+        background-color: white;
+    }
+
+    svg {
+        width: 14vw;
+    }
+
+    .vrouwen {
+        width: 42%;
+    }
+}
