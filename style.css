@@ -470,7 +470,7 @@ MEDIAQUERIES ------------------------------------------
 
 @media screen and (min-width: 70em) {
     body {
-        background-color: green;
+        background-color: white;
     }
     svg {
         width: 14vw;
